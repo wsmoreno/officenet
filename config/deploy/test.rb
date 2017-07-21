@@ -6,13 +6,13 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-role :app, %w{hqqa.unitrade.local}
-role :web, %w{hqqa.unitrade.local}
-role :db,  %w{hqqa.unitrade.local}
-set :stage, :qa
+role :app, %w{hqtest.unitrade.local}
+role :web, %w{hqtest.unitrade.local}
+role :db,  %w{hqtest.unitrade.local}
+set :stage, :test
 
 
-server 'hqqa.unitrade.local', user: 'deploy', roles: %w{app db web}
+server 'hqtest.unitrade.local', user: 'deploy', roles: %w{app db web}
 
 # role-based syntax
 # ==================

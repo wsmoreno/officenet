@@ -43,6 +43,7 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.5'
   gem 'capybara', '~> 2.5'
   gem 'faker', '~> 1.6.1'
+  gem 'listen', '~> 3.1.5'
 end
 
 group :development do

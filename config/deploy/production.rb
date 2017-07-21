@@ -1,3 +1,5 @@
+require File.expand_path('../application', __FILE__)
+Officenet::Application.initialize!
 ENV["RAILS_ENV"] = "development"
 # server-based syntax
 # ======================

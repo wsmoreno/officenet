@@ -14,6 +14,7 @@ set :stage, :production
 
 
 server 'hq.unitrade.local', user: 'deploy', roles: %w{app db web}
+set :rails_env, :production
 
 # role-based syntax
 # ==================

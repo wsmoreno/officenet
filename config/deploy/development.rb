@@ -13,6 +13,7 @@ set :stage, :development
 
 
 server 'hqdev.unitrade.local', user: 'deploy', roles: %w{app db web}
+set :rails_env, :development
 
 # role-based syntax
 # ==================

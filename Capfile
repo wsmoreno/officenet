@@ -10,6 +10,7 @@ require 'capistrano/bundler'
 require 'capistrano/rbenv'
 set :rbenv_type, :user
 set :rbenv_ruby, '2.4.0'
+set :ssh_options, {:forward_aget => true}
 
 # Load the SCM plugin appropriate to your project:
 #

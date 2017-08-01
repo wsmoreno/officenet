@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'mysql2', '~> 0.4.8'
 gem 'listen', '~> 3.1.5'
 gem 'devise', '~> 4.0'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

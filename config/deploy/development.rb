@@ -8,11 +8,12 @@
 # server "db.example.com", user: "deploy", roles: %w{db}
 role :app, %w{hqdev.unitrade.local}
 role :web, %w{hqdev.unitrade.local}
-role :db,  %w{hqdev.unitrade.local}
+role :db,  %w{devdb.unitrade.local}
 set :stage, :development
 
 
 server 'hqdev.unitrade.local', user: 'deploy', roles: %w{app db web}
+server 'devdb.unitrade.local', user: 'deploy', roles: %w{db}
 set :rails_env, :development
 
 # role-based syntax

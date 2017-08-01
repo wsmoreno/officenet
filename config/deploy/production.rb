@@ -9,11 +9,12 @@
 
 role :app, %w{hq.unitrade.local}
 role :web, %w{hq.unitrade.local}
-role :db,  %w{hq.unitrade.local}
+role :db,  %w{railsproddb.unitrade.local}
 set :stage, :production
 
 
-server 'hq.unitrade.local', user: 'deploy', roles: %w{app db web}
+server 'hq.unitrade.local', user: 'deploy', roles: %w{app web}
+server 'railsproddb.unitrade.local', user: 'deploy', roles: %w{db}
 set :rails_env, :production
 
 # role-based syntax
